@@ -197,9 +197,11 @@ MonoBehaviour:
   target: {fileID: 0}
   rb: {fileID: 0}
   speed: 16
-  followDistance: 0.3
-  speedUpDistance: 2
+  followDistance: 1
+  running: 0
   fasterSpeed: 20
+  head: 0
+  distance: 0
 --- !u!114 &3701457831299487030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,3 +216,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delayTime: 0.1
   updateFrequency: 0.05
+  positions: 0
+  follower: {fileID: 0}

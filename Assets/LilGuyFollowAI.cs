@@ -26,11 +26,11 @@ public class LilGuyFollowAI : MonoBehaviour
 
     private void FixedUpdate()
     {
-        target.hasFollower = (follower != null);
+        target.follower = this;
         timeAC += Time.deltaTime;
 
         //Grab new waypoint if reached current one or took too long to reach current one
-        if (curTarget == Vector2.zero || Vector2.Distance(transform.position, curTarget) <= followDistance || timeAC > 0.5f)
+        if (curTarget == Vector2.zero || Vector2.Distance(transform.position, curTarget) <= 0.3f || timeAC > 0.5f)
         {
             if (target.getPositionHistory().Count > 0)
             {
@@ -42,9 +42,15 @@ public class LilGuyFollowAI : MonoBehaviour
         //move towards waypoint if within follow distance
         Vector2 direction = curTarget - rb.position;
         
-        if (direction.magnitude > followDistance)
+        if(distance < followDistance && target.positions <= 1)
         {
-            if(!running)rb.velocity = direction.normalized * speed;
+            target.setStopped(true);
+            rb.velocity = new Vector2(0f, rb.velocity.y);
+        }
+        else
+        {
+            target.setStopped(false);
+            if (!running) rb.velocity = direction.normalized * speed;
             else rb.velocity = direction.normalized * fasterSpeed;
         }
 
