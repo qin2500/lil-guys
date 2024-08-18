@@ -19,6 +19,7 @@ public class PlayerMovementSettings : ScriptableObject
 
     [Header("JUMP")]
     public float jumpPower = 36;
+    public float bonusJumpPower = 45;
     public float maxFallSpeed = 40;
     public float fallAcceleration = 110f;
     public float jumpEndEarlyGravityModifier = 3;

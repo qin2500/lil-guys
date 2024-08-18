@@ -131,6 +131,8 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    
+
     private void handleJump()
     {
         //Check if player stopped holding jump button before reaching apex
@@ -153,8 +155,12 @@ public class PlayerMovement : MonoBehaviour
         coyoteOn = false;
 
         curVelocity.y = settings.jumpPower;
-    }  
-    
+    }
+    public void bonusJump()
+    {
+        curVelocity.y = settings.bonusJumpPower;
+    }
+
     public void jump()
     {
         jumping = true;
@@ -178,5 +184,13 @@ public class PlayerMovement : MonoBehaviour
     public void setHitStun(bool val)
     {
         this.isInHitStun = val;
+    }
+    public bool getJumping()
+    {
+        return jumping;
+    }
+    public Vector2 getVelocity()
+    {
+        return curVelocity;
     }
 }
