@@ -6,9 +6,12 @@ public class DelayedPositionUpdate : MonoBehaviour
     [SerializeField] private float delayTime = 1f;
     [SerializeField] private float updateFrequency = 0.1f;
 
-    public Queue<Vector2> positionHistory = new Queue<Vector2>();
+    public int positions = 0;
+    private Queue<Vector2> positionHistory = new Queue<Vector2>();
     private float elapsedTime = 0.0f;
     private Vector2 lastRecordedPosition;
+
+    public bool hasFollower = false;
 
     private void Start()
     {
@@ -19,6 +22,8 @@ public class DelayedPositionUpdate : MonoBehaviour
 
     private void Update()
     {
+        if (!hasFollower) return;
+        positions = positionHistory.Count;
         elapsedTime += Time.deltaTime;
 
         if (elapsedTime >= updateFrequency)
@@ -36,10 +41,10 @@ public class DelayedPositionUpdate : MonoBehaviour
         }
 
 
-        while (positionHistory.Count > 0 && positionHistory.Count > delayTime / updateFrequency)
-        {
-            positionHistory.Dequeue();
-        }
+        //while (positionHistory.Count > 0 && positionHistory.Count > delayTime / updateFrequency)
+        //{
+        //    positionHistory.Dequeue();
+        //}
     }
 
     public Vector2 GetDelayedPosition()
@@ -58,4 +63,5 @@ public class DelayedPositionUpdate : MonoBehaviour
     {
         return positionHistory;
     }
+
 }
