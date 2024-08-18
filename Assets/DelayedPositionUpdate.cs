@@ -36,10 +36,10 @@ public class DelayedPositionUpdate : MonoBehaviour
         }
 
 
-        //while (positionHistory.Count > 0 && positionHistory.Count > delayTime / updateFrequency)
-        //{
-        //    positionHistory.Dequeue();
-        //}
+        while (positionHistory.Count > 0 && positionHistory.Count > delayTime / updateFrequency)
+        {
+            positionHistory.Dequeue();
+        }
     }
 
     public Vector2 GetDelayedPosition()

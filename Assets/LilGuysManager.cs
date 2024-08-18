@@ -5,7 +5,12 @@ using UnityEngine;
 
 public class LilGuysManager : MonoBehaviour
 {
-    public int lilGuysCount = 5;
+    [SerializeField]private GameObject lilGuy;
+    [SerializeField]private GameObject lilGuySpawn;
+    [SerializeField] private DelayedPositionUpdate positionUpdater;
+
+    private int lilGuysCount = 0;
+    private LinkedList<GameObject> lilGuys = new LinkedList<GameObject>();
 
     private PlayerMovement playerMovement;
     // Start is called before the first frame update
@@ -26,5 +31,29 @@ public class LilGuysManager : MonoBehaviour
             }
         }
 
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            summonBoy();
+        }
+    }
+
+    public GameObject summonBoy()
+    {
+        GameObject spawnedObject = Instantiate(lilGuy, lilGuySpawn.transform.position, Quaternion.identity);        
+
+        LilGuyFollowAI lilGuyAi = spawnedObject.GetComponent<LilGuyFollowAI>();
+        if (lilGuys.Count != 0)
+        {
+            lilGuys.Last.Value.GetComponent<LilGuyFollowAI>().setFollower(lilGuyAi);
+            lilGuyAi.target = lilGuys.Last.Value.GetComponent<DelayedPositionUpdate>();
+        }
+        else
+        {
+            lilGuyAi.target = positionUpdater;
+        }
+        lilGuys.AddLast(spawnedObject);
+        lilGuysCount++;
+
+        return lilGuySpawn;
     }
 }

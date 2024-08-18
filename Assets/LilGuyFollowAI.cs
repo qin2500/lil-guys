@@ -4,6 +4,7 @@ using UnityEngine;
 public class LilGuyFollowAI : MonoBehaviour
 {
     public DelayedPositionUpdate target;
+    private LilGuyFollowAI follower;
     public Rigidbody2D rb;
     public float speed = 5f;
     public float followDistance = 0.1f; // Adjust this value to define how close the AI should be before dequeuing
@@ -36,4 +37,10 @@ public class LilGuyFollowAI : MonoBehaviour
             rb.velocity = new Vector2(0f, rb.velocity.y);
         }
     }
+
+    public void setFollower(LilGuyFollowAI follower)
+    {
+        this.follower = follower;
+    }
+
 }
