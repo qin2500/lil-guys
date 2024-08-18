@@ -8,6 +8,7 @@ public class LilGuysManager : MonoBehaviour
     [SerializeField]private GameObject lilGuy;
     [SerializeField]private GameObject lilGuySpawn;
     [SerializeField] private DelayedPositionUpdate positionUpdater;
+    [SerializeField] private float lilGuysCatchUpDistance = 3f;//Distance when lil guys start to speed up to catch up to you.
 
     private int lilGuysCount = 0;
     private LinkedList<GameObject> lilGuys = new LinkedList<GameObject>();
@@ -49,11 +50,25 @@ public class LilGuysManager : MonoBehaviour
         }
         else
         {
+            lilGuyAi.setSpeedUpDistance(lilGuysCatchUpDistance);
             lilGuyAi.target = positionUpdater;
+            lilGuyAi.setHead(true);
         }
+        lilGuyAi.setPlayer(this.gameObject);
         lilGuys.AddLast(spawnedObject);
         lilGuysCount++;
 
         return lilGuySpawn;
+    }
+
+    public void genocide()
+    {
+        foreach(GameObject lilGuy in lilGuys)
+        {
+            Destroy(lilGuy);
+        }
+        lilGuys.Clear();
+
+        Debug.Log("All lilGuys killed");
     }
 }

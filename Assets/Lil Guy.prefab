@@ -198,6 +198,8 @@ MonoBehaviour:
   rb: {fileID: 0}
   speed: 16
   followDistance: 0.3
+  speedUpDistance: 2
+  fasterSpeed: 20
 --- !u!114 &3701457831299487030
 MonoBehaviour:
   m_ObjectHideFlags: 0
