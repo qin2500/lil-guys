@@ -11,15 +11,12 @@ public static class GlobalReferences
     private static GameObject startIndicator;
     //private static SoundMixerManager soundMixerManager;
     private static Player player = new();
-    private static CameraShakeController shakeController;
 
     public static GameManager GAMEMANAGER {  get { return gameManager; } set { gameManager = value; } }
     public static LevelManager LEVELMANAGER { get { return levelManager; } set { levelManager = value; } }
     //public static SoundMixerManager SOUNDMIXERMANAGER { get {return soundMixerManager; } set {soundMixerManager = value;}}
     public static GameObject STARTINDICATOR { get { return startIndicator; } set { startIndicator = value; } }
     public static Player PLAYER { get { return player; } set { player = value; } }
-
-    public static CameraShakeController SHAKECONTROLLER { get { return shakeController; }  set { shakeController = value; } }
 
     public const int LEVELEXP = 100;
 }
@@ -30,8 +27,6 @@ public class Player
     private int score;
     private int exp;
     private int level;
-    private Pentagram pentagram = new Pentagram();
-    private PlayerHealth health;
     private GameObject playerObject;
     public string Username { get { return username; } set { username = value; } }
     public int Score { get { return score; } set { score = value; } }
@@ -39,9 +34,6 @@ public class Player
     public int potionCooldown = 30;
     public int Level { get { return level; } set { level = value; } }
     public int Exp { get { return exp; } set { exp = value; } }
-
-    public Pentagram Pentagram { get { return pentagram; } set { pentagram = value; } }
-    public PlayerHealth Health { get { return health;   } set { health = value; } } 
 
     public GameObject PlayerObject { get {  return playerObject; } set { playerObject = value; } }   
 
@@ -63,7 +55,7 @@ public static class SceneNames
     public const string GAMEMANAGER = "GameManager";
     public const string UPGRADEMENU = "UpgradeMenu";
     public const string COMBINEMENU = "CombineMenu";
-    public const string STAGE = "Stage"; //TODO: PLEASE CHANGE THIS NAME
+    public const string SAMPLESCENE = "Sample Scene"; //TODO: PLEASE CHANGE THIS NAME
     public const string TUTORIAL = "Tutorial";
     public const string WAVE1 = "Wave1";
 }

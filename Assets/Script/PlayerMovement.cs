@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
         cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
         jumping = false;
         coyoteOn = false;
-        //GlobalReferences.PLAYER.PlayerObject = this.gameObject;
+        GlobalReferences.PLAYER.PlayerObject = this.gameObject;
     }
 
     private void Update()

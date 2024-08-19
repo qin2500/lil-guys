@@ -8,15 +8,11 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
 
-    private int _wave = 0;
-    [SerializeField] private TMP_Text expTracker;
-    [SerializeField] private TMP_Text waveCounter;
-
+    private int _level = 0;
 
     private bool stopUpdating = false;
 
-    public int enemyCredits = 20;
-
+    [SerializeField] private TMP_Text levelCounter;
 
     private void Awake()
     {
@@ -34,9 +30,8 @@ public class LevelManager : MonoBehaviour
         GlobalEvents.PlayerStartedMoving.uninvoke();
 
         //load arena
-        loadArena();
+        setLevel(1);
         //load tutorial
-
 
     }
 
@@ -51,7 +46,7 @@ public class LevelManager : MonoBehaviour
         }
         if (GlobalEvents.PlayerStartedMoving.Invoked() && !GlobalEvents.PlayerPause.Invoked())
         {
-            //will probably signal wave to start/resume
+            //will probably signal level to start/resume
         }
 
         if (GlobalEvents.PlayerDeath.Invoked())
@@ -89,40 +84,38 @@ public class LevelManager : MonoBehaviour
 
         }
 
-        expTracker.text = $@"Level: {GlobalReferences.PLAYER.Level} - Exp: {GlobalReferences.PLAYER.Exp}/100";
-
     }
 
-    public void setWave(int wave)
+    public void setLevel(int level)
     {
 
-        if (wave == 0)
+        if (level == 0)
         {
-            Debug.Log("Some bozo tried to set the wave to 0");
-            throw new Exception("wave cannot be set to 0");
+            Debug.Log("Some bozo tried to set the level to 0");
+            throw new Exception("level cannot be set to 0");
         }
 
-        UnloadWave(() =>
+        Unloadlevel(() =>
         {
-            Debug.Log("Loading wave: " + this._wave);
-            SceneManager.LoadSceneAsync("wave " + this._wave, mode: LoadSceneMode.Additive).completed += (asyncOperation) =>
+            Debug.Log("Loading level: " + this._level);
+            SceneManager.LoadSceneAsync("level " + this._level, mode: LoadSceneMode.Additive).completed += (asyncOperation) =>
             {
               
-                    Debug.Log("Loaded wave: " + this._wave);
+                    Debug.Log("Loaded level: " + this._level);
 
-                    waveCounter.text = "Wave " + this._wave;
+                    levelCounter.text = "Level " + this._level;
                
             };
         });
     }
 
-    public void UnloadWave(System.Action callback)
+    public void Unloadlevel(System.Action callback)
     {
-        Debug.Log("unload wave called for wave: " + this._wave);
-        if (this._wave > 0)
+        Debug.Log("unload level called for level: " + this._level);
+        if (this._level > 0)
         {
-            Debug.Log("Unloading wave: " + this._wave);
-            SceneManager.UnloadSceneAsync("wave " + this._wave).completed += (asyncOperation) =>
+            Debug.Log("Unloading level: " + this._level);
+            SceneManager.UnloadSceneAsync("level " + this._level).completed += (asyncOperation) =>
             {
                callback();
             };
@@ -132,16 +125,16 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void incrementLevel() { setWave(this._wave + 1); }
+    public void incrementLevel() { setLevel(this._level + 1); }
 
     public void restartLevel()
     {
-        setWave(this._wave);
+        setLevel(this._level);
     }
 
     public void loadMainMenu()
     {
-        UnloadWave(() => 
+        Unloadlevel(() => 
         { 
             SceneManager.LoadSceneAsync("MainMenu", mode: LoadSceneMode.Additive).completed+=(asyncOperation)=> 
             { 
@@ -187,17 +180,7 @@ public class LevelManager : MonoBehaviour
 
     private string levelString()
     {
-        return "level" + this._wave;
-    }
-
-    private void loadArena()
-    {
-        SceneManager.LoadSceneAsync(SceneNames.STAGE, mode: LoadSceneMode.Additive).completed += (asyncOperation) =>
-        {
-            SceneManager.LoadSceneAsync(SceneNames.WAVE1, mode: LoadSceneMode.Additive).completed += (asyncOperation) =>
-            {
-            };
-        };
+        return "level" + this._level;
     }
 
     private void levelUpPlayer()
