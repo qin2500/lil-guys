@@ -69,8 +69,8 @@ public class LevelManager : MonoBehaviour
 
         if (GlobalEvents.LevelComplete.Invoked())
         {
-            loadMainMenu();
-            return;
+            completeLevel();
+               return;
         }
 
         if (Input.GetKeyDown(KeyCode.R) && !GlobalEvents.PlayerPause.Invoked())
@@ -120,7 +120,7 @@ public class LevelManager : MonoBehaviour
 
         Unloadlevel(() =>
         {
-
+            this._level = level;
             //TODO: uncomment code after making levels
             // Debug.Log("Loading level: " + this._level);
             // SceneManager.LoadSceneAsync("level " + this._level, mode: LoadSceneMode.Additive).completed += (asyncOperation) =>
@@ -130,6 +130,8 @@ public class LevelManager : MonoBehaviour
 
             //      levelCounter.text = "Level " + this._level;
             //};
+
+            
             loadPlayerMovement();
 
         });
@@ -137,11 +139,16 @@ public class LevelManager : MonoBehaviour
 
     public void Unloadlevel(System.Action callback)
     {
+
+
+
+
         Debug.Log("unload level called for level: " + this._level);
         if (this._level > 0)
         {
             Debug.Log("Unloading level: " + this._level);
-            SceneManager.UnloadSceneAsync("level " + this._level).completed += (asyncOperation) =>
+            //SceneManager.UnloadSceneAsync("level " + this._level).completed += (asyncOperation) =>
+            SceneManager.UnloadSceneAsync(SceneNames.PLAYERMOVEMENT).completed += (asyncOperation) => //TODO: comment out and uncomment above line
             {
                callback();
             };
@@ -208,5 +215,22 @@ public class LevelManager : MonoBehaviour
         {
             levelCounter.text = "Debug Level";
         };
+    }
+
+    private void completeLevel()
+    {
+        loadMainMenu(); //TODO: replace with increment level until all levels done
+        return;
+
+        if (this._level == GlobalReferences.NUMLEVELS)
+        {
+            //game done TODO: add completion stuff like displaying time or something
+
+            loadMainMenu();
+        }else
+        {
+            incrementLevel();
+
+        }
     }
 }
