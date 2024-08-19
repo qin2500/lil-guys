@@ -48,6 +48,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+
+        if (GlobalEvents.PlayerPause.Invoked()) return;
+
         timeAC += Time.deltaTime;
         inputData = new InputData
         {
@@ -67,6 +70,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (GlobalEvents.PlayerPause.Invoked()) return;
+
         CheckCollision();
 
         handleJump();

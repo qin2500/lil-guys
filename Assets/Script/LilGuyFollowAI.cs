@@ -29,6 +29,8 @@ public class LilGuyFollowAI : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (GlobalEvents.PlayerPause.Invoked()) return;
+
 
         if (hasJesusTakenTheWheel) return;
 
