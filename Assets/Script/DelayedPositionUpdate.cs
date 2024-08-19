@@ -11,7 +11,8 @@ public class DelayedPositionUpdate : MonoBehaviour
     private float elapsedTime = 0.0f;
     private Vector2 lastRecordedPosition;
 
-    public bool hasFollower = false;
+    public LilGuyFollowAI follower;
+    private bool stopped;
 
     private void Start()
     {
@@ -22,7 +23,7 @@ public class DelayedPositionUpdate : MonoBehaviour
 
     private void Update()
     {
-        if (!hasFollower) return;
+        if (follower == null || stopped) return;
         positions = positionHistory.Count;
         elapsedTime += Time.deltaTime;
 
@@ -62,6 +63,10 @@ public class DelayedPositionUpdate : MonoBehaviour
     public Queue<Vector2> getPositionHistory()
     {
         return positionHistory;
+    }
+    public void setStopped(bool setStopped)
+    {
+        this.stopped = setStopped;
     }
 
 }

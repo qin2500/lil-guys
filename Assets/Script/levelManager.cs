@@ -14,6 +14,8 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] private TMP_Text levelCounter;
 
+    [SerializeField] private GameObject pauseMenu;
+
     private void Awake()
     {
         GlobalReferences.LEVELMANAGER = this;
@@ -40,10 +42,6 @@ public class LevelManager : MonoBehaviour
     {
         if (stopUpdating) return;
 
-        if (GlobalReferences.PLAYER.Exp >= GlobalReferences.LEVELEXP)
-        {
-            levelUpPlayer();
-        }
         if (GlobalEvents.PlayerStartedMoving.Invoked() && !GlobalEvents.PlayerPause.Invoked())
         {
             //will probably signal level to start/resume
@@ -97,15 +95,18 @@ public class LevelManager : MonoBehaviour
 
         Unloadlevel(() =>
         {
-            Debug.Log("Loading level: " + this._level);
-            SceneManager.LoadSceneAsync("level " + this._level, mode: LoadSceneMode.Additive).completed += (asyncOperation) =>
-            {
-              
-                    Debug.Log("Loaded level: " + this._level);
 
-                    levelCounter.text = "Level " + this._level;
-               
-            };
+            //TODO: uncomment code after making levels
+            // Debug.Log("Loading level: " + this._level);
+            // SceneManager.LoadSceneAsync("level " + this._level, mode: LoadSceneMode.Additive).completed += (asyncOperation) =>
+            // {
+
+            //      Debug.Log("Loaded level: " + this._level);
+
+            //      levelCounter.text = "Level " + this._level;
+            //};
+            loadPlayerMovement();
+
         });
     }
 
@@ -145,37 +146,24 @@ public class LevelManager : MonoBehaviour
 
     private void togglePauseMenu()
     {
-        if (GlobalEvents.PlayerPause.Invoked())
+        if (!GlobalEvents.PlayerPause.Invoked())
         {
-            SceneManager.UnloadSceneAsync("PauseMenu").completed += (asyncOperation) => 
-            {
+            //SceneManager.UnloadSceneAsync("PauseMenu").completed += (asyncOperation) => 
+           // {
                 GlobalEvents.PlayerPause.uninvoke();
-            };
+            //};
 
+            pauseMenu.SetActive(true);
         }
         else
         {
-            SceneManager.LoadSceneAsync("PauseMenu", mode: LoadSceneMode.Additive).completed += (asyncOperation) => 
-            { 
+          //  SceneManager.LoadSceneAsync("PauseMenu", mode: LoadSceneMode.Additive).completed += (asyncOperation) => 
+           // { 
                 GlobalEvents.PlayerPause.invoke();
-            };
+          //  };
+
+            pauseMenu.SetActive(false);
         }
-    }
-
-    private void displayUpgradeMenu()
-    {
-        SceneManager.LoadSceneAsync(SceneNames.UPGRADEMENU, mode: LoadSceneMode.Additive).completed += (asyncOperation) =>
-        {
-            GlobalEvents.PlayerPause.invoke();
-        };
-    }
-
-    private void displayCombineMenu()
-    {
-        SceneManager.LoadSceneAsync(SceneNames.COMBINEMENU, mode: LoadSceneMode.Additive).completed += (asyncOperation) =>
-        {
-            GlobalEvents.PlayerPause.invoke();
-        };
     }
 
     private string levelString()
@@ -183,18 +171,11 @@ public class LevelManager : MonoBehaviour
         return "level" + this._level;
     }
 
-    private void levelUpPlayer()
+    private void loadPlayerMovement()
     {
-        GlobalReferences.PLAYER.Exp -= 100; //race condition but who cares
-        GlobalReferences.PLAYER.Level += 1;
-        if (GlobalReferences.PLAYER.Level % 2 == 0 && GlobalReferences.PLAYER.Level % 3 == 0)
+        SceneManager.LoadSceneAsync(SceneNames.PLAYERMOVEMENT, mode: LoadSceneMode.Additive).completed += (asyncOperation) =>
         {
-            //upgrade time
-
-           displayCombineMenu();
-        } else if (GlobalReferences.PLAYER.Level % 2 == 0)
-        {
-            displayCombineMenu();
-        }
+            levelCounter.text = "Debug Level";
+        };
     }
 }

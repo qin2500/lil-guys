@@ -1421,7 +1421,7 @@ MonoBehaviour:
   delayTime: 0.5
   updateFrequency: 0.1
   positions: 0
-  hasFollower: 0
+  follower: {fileID: 0}
 --- !u!1 &986784643
 GameObject:
   m_ObjectHideFlags: 0
@@ -2154,7 +2154,7 @@ MonoBehaviour:
   delayTime: 0.5
   updateFrequency: 0.1
   positions: 0
-  hasFollower: 0
+  follower: {fileID: 0}
 --- !u!114 &1503644406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3056,6 +3056,10 @@ PrefabInstance:
       propertyPath: collisionParticleEffect
       value: 
       objectReference: {fileID: 2669113163075602650, guid: 94ffdcbf7299efc448e717e93556fb57, type: 3}
+    - target: {fileID: 3701457831299487030, guid: 94a102346b05131458a7738b14e20ec9, type: 3}
+      propertyPath: delayTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5024271257300210585, guid: 94a102346b05131458a7738b14e20ec9, type: 3}
       propertyPath: target
       value: 
@@ -3111,13 +3115,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8451870551777827836, guid: 94a102346b05131458a7738b14e20ec9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7274062866746481799}
   m_SourcePrefab: {fileID: 100100000, guid: 94a102346b05131458a7738b14e20ec9, type: 3}
 --- !u!1 &7274062866746481793 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8451870551777827836, guid: 94a102346b05131458a7738b14e20ec9, type: 3}
   m_PrefabInstance: {fileID: 7274062866746481792}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7274062866746481799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7274062866746481793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ea41ae96d289984887b9eba441155d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDisable: 4
+  collisionParticleEffect: {fileID: 2669113163075602650, guid: 94ffdcbf7299efc448e717e93556fb57, type: 3}
 --- !u!1001 &7378225194606348239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3175,6 +3196,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7891141988221843771, guid: ec1689588d7f0304baf05b8a23a6b84a, type: 3}
+      propertyPath: throwPower
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7891141988221843771, guid: ec1689588d7f0304baf05b8a23a6b84a, type: 3}
       propertyPath: lilGuyPrefab
       value: 
       objectReference: {fileID: 7274062866746481793}
@@ -3182,6 +3207,10 @@ PrefabInstance:
       propertyPath: homicideParticleEffect
       value: 
       objectReference: {fileID: 2669113163075602650, guid: 94ffdcbf7299efc448e717e93556fb57, type: 3}
+    - target: {fileID: 7891141988221843771, guid: ec1689588d7f0304baf05b8a23a6b84a, type: 3}
+      propertyPath: timeToDisableThrownGuy
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

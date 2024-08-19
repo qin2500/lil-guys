@@ -198,7 +198,7 @@ MonoBehaviour:
   target: {fileID: 0}
   rb: {fileID: 0}
   speed: 16
-  followDistance: 0.3
+  followDistance: 1
   running: 0
   fasterSpeed: 20
   head: 0
@@ -218,18 +218,4 @@ MonoBehaviour:
   delayTime: 0.1
   updateFrequency: 0.05
   positions: 0
-  hasFollower: 0
---- !u!114 &1406984170031357292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8451870551777827836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ea41ae96d289984887b9eba441155d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeToDisable: 3
-  collisionParticleEffect: {fileID: 2669113163075602650, guid: 59af2ebc2753d994ab9b3ccfd116989f, type: 3}
+  follower: {fileID: 0}

@@ -49,6 +49,7 @@ public static class SceneNames
 {
     public const string MAINMENU = "MainMenu";
     public const string PLAYERCONTROLLER = "PlayerController";
+    public const string PLAYERMOVEMENT = "PlayerMovement";
     public const string CREDITS = "Credits";
     public const string PAUSEMENU = "PauseMenu";
     public const string LEVELCONTROLLER = "LevelController";
