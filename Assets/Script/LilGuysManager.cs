@@ -43,6 +43,8 @@ public class LilGuysManager : MonoBehaviour
         {
             summonBoy();
         }
+
+        GlobalReferences.PLAYER.LilGuyCount = lilGuys.Count;
     }
 
     public GameObject summonBoy()
