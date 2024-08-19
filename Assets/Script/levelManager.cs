@@ -31,6 +31,9 @@ public class LevelManager : MonoBehaviour
         GlobalEvents.LevelComplete.uninvoke();
         GlobalEvents.PlayerStartedMoving.uninvoke();
 
+        pauseMenu.SetActive(false);
+        Instantiate(pauseMenu);
+
         //load arena
         setLevel(1);
         //load tutorial
@@ -146,11 +149,12 @@ public class LevelManager : MonoBehaviour
 
     private void togglePauseMenu()
     {
+        Debug.Log("Toggling pause");
         if (!GlobalEvents.PlayerPause.Invoked())
         {
             //SceneManager.UnloadSceneAsync("PauseMenu").completed += (asyncOperation) => 
            // {
-                GlobalEvents.PlayerPause.uninvoke();
+                GlobalEvents.PlayerPause.invoke();
             //};
 
             pauseMenu.SetActive(true);
@@ -159,7 +163,7 @@ public class LevelManager : MonoBehaviour
         {
           //  SceneManager.LoadSceneAsync("PauseMenu", mode: LoadSceneMode.Additive).completed += (asyncOperation) => 
            // { 
-                GlobalEvents.PlayerPause.invoke();
+                GlobalEvents.PlayerPause.uninvoke();
           //  };
 
             pauseMenu.SetActive(false);
