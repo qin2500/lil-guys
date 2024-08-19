@@ -197,10 +197,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   rb: {fileID: 0}
-  speed: 16
+  speed: 25
   followDistance: 1
   running: 0
-  fasterSpeed: 20
+  fasterSpeed: 30
   head: 0
   distance: 0
 --- !u!114 &3701457831299487030
