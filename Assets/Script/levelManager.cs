@@ -32,7 +32,7 @@ public class LevelManager : MonoBehaviour
         GlobalEvents.PlayerStartedMoving.uninvoke();
 
         pauseMenu.SetActive(false);
-        Instantiate(pauseMenu);
+        pauseMenu = Instantiate(pauseMenu);
 
         //load arena
         setLevel(1);
@@ -150,23 +150,23 @@ public class LevelManager : MonoBehaviour
     private void togglePauseMenu()
     {
         Debug.Log("Toggling pause");
-        if (!GlobalEvents.PlayerPause.Invoked())
+        if (GlobalEvents.PlayerPause.Invoked())
         {
             //SceneManager.UnloadSceneAsync("PauseMenu").completed += (asyncOperation) => 
            // {
-                GlobalEvents.PlayerPause.invoke();
+                GlobalEvents.PlayerPause.uninvoke();
             //};
 
-            pauseMenu.SetActive(true);
+            pauseMenu.SetActive(false);
         }
         else
         {
           //  SceneManager.LoadSceneAsync("PauseMenu", mode: LoadSceneMode.Additive).completed += (asyncOperation) => 
            // { 
-                GlobalEvents.PlayerPause.uninvoke();
+                GlobalEvents.PlayerPause.invoke();
           //  };
 
-            pauseMenu.SetActive(false);
+            pauseMenu.SetActive(true);
         }
     }
 
