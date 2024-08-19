@@ -1,0 +1,1794 @@
+fileFormatVersion: 2
+guid: e01267d20f5272e498b60c64e65b49e3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 64
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638596253776753222
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: biglilguy_Frame_0
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.06521739}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 4
+      width: 43
+      height: 46
+    spriteID: 1b5dd59bab2d51d4595ef05881806613
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 4}
+  - name: biglilguy_Frame_1
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.06666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 4
+      width: 43
+      height: 45
+    spriteID: b98b4cc1bbc4f434195645e228a84174
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 4}
+  - name: biglilguy_Frame_2
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.06666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 57
+      width: 43
+      height: 45
+    spriteID: 823d344346d6c594b9c4f73d30a735ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 57}
+  - name: biglilguy_Frame_3
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.06818182}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 216
+      width: 43
+      height: 44
+    spriteID: 7687facf2a066af46b81fbd7d35e5388
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 216}
+  - name: biglilguy_Frame_4
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.06818182}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 268
+      width: 43
+      height: 44
+    spriteID: c3e11201e5dee984c8f8616fb35cc382
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 268}
+  - name: biglilguy_Frame_5
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.069767445}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 255
+      y: 4
+      width: 43
+      height: 43
+    spriteID: c23073d6c1cae5b408a5274dd7520626
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 255, y: 4}
+  - name: biglilguy_Frame_6
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.069767445}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 255
+      y: 55
+      width: 43
+      height: 43
+    spriteID: 1afce4cf6b6b0f2438fa8aa733c1059f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 255, y: 55}
+  - name: biglilguy_Frame_7
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.069767445}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 255
+      y: 106
+      width: 43
+      height: 43
+    spriteID: a5ffd91fa96b7b34b8138e5e5130e896
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 255, y: 106}
+  - name: biglilguy_Frame_8
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.069767445}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 255
+      y: 157
+      width: 43
+      height: 43
+    spriteID: e4c5845fd2ef4e44ea57651c4c2991b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 255, y: 157}
+  - name: biglilguy_Frame_9
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.06818182}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 320
+      width: 43
+      height: 44
+    spriteID: 78cc88a69a96ad2469a574e0f91ac806
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 320}
+  - name: biglilguy_Frame_10
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.06666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 110
+      width: 43
+      height: 45
+    spriteID: dcc12a71736c67745843a9d32b3e73a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 110}
+  - name: biglilguy_Frame_11
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.06521739}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 58
+      width: 43
+      height: 46
+    spriteID: 677302e8a33a77f419466cbcc325b46e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 58}
+  - name: biglilguy_Frame_12
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.06521739}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 112
+      width: 43
+      height: 46
+    spriteID: 3c3d3e38bbb848647b6fcf834fb8efa5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 112}
+  - name: biglilguy_Frame_13
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.06521739}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 166
+      width: 43
+      height: 46
+    spriteID: 7d2674ab475633e448dc545b258b576e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 166}
+  - name: biglilguy_Frame_14
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.06521739}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 220
+      width: 43
+      height: 46
+    spriteID: 59ef6c27a598bc34f8672fe3fbc88cb7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 220}
+  - name: biglilguy_Frame_15
+    originalName: 
+    pivot: {x: 0.43902442, y: -0.06521739}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 424
+      width: 41
+      height: 46
+    spriteID: 88e66c796cddd0047adb2e507edde194
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 424}
+  - name: biglilguy_Frame_16
+    originalName: 
+    pivot: {x: 0.43902442, y: -0.06521739}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 206
+      y: 4
+      width: 41
+      height: 46
+    spriteID: 321422699dd3a004ca6f32f17a40a2f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 206, y: 4}
+  - name: biglilguy_Frame_17
+    originalName: 
+    pivot: {x: 0.41025642, y: -0.06521739}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 255
+      y: 415
+      width: 39
+      height: 46
+    spriteID: bc76e5462b7c59c4dab12fc7efa15250
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 255, y: 415}
+  - name: biglilguy_Frame_18
+    originalName: 
+    pivot: {x: 0.45238096, y: -0.020833332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 42
+      height: 48
+    spriteID: a056713b5d082ca449df305d53ae8b58
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: biglilguy_Frame_19
+    originalName: 
+    pivot: {x: 0.39999998, y: -0.06}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 228
+      width: 40
+      height: 50
+    spriteID: 295545fd3afb5cb46b774c83f3c8aa9a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 228}
+  - name: biglilguy_Frame_20
+    originalName: 
+    pivot: {x: 0.39999998, y: -0.08163265}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 341
+      width: 40
+      height: 49
+    spriteID: 2dc32a52ccc00634ea3f5d13c6f8a9e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 341}
+  - name: biglilguy_Frame_21
+    originalName: 
+    pivot: {x: 0.39999998, y: -0.06382979}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 206
+      y: 58
+      width: 40
+      height: 47
+    spriteID: f8d7eb3ab3b77544b825ed78f7c974d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 206, y: 58}
+  - name: biglilguy_Frame_22
+    originalName: 
+    pivot: {x: 0.39999998, y: -0.021276595}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 206
+      y: 113
+      width: 40
+      height: 47
+    spriteID: e7e26cd4ddd4b03418f99385bcfb53cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 206, y: 113}
+  - name: biglilguy_Frame_23
+    originalName: 
+    pivot: {x: 0.39999998, y: -0.021276595}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 206
+      y: 168
+      width: 40
+      height: 47
+    spriteID: 06f6ff059c2ce0d4e98fc9eca960aba6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 206, y: 168}
+  - name: biglilguy_Frame_24
+    originalName: 
+    pivot: {x: 0.39999998, y: -0.022222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 206
+      y: 387
+      width: 40
+      height: 45
+    spriteID: 9daedb3cf71cc7243b398ea3ace8ee32
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 206, y: 387}
+  - name: biglilguy_Frame_25
+    originalName: 
+    pivot: {x: 0.39999998, y: -0.022222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 206
+      y: 440
+      width: 40
+      height: 45
+    spriteID: b945475918c19f4418b209452e338b3b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 206, y: 440}
+  - name: biglilguy_Frame_26
+    originalName: 
+    pivot: {x: 0.39999998, y: -0.022222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 255
+      y: 309
+      width: 40
+      height: 45
+    spriteID: 1b6b876cb3c3c304bb485e69b50fdab3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 255, y: 309}
+  - name: biglilguy_Frame_27
+    originalName: 
+    pivot: {x: 0.39999998, y: -0.08888889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 255
+      y: 362
+      width: 40
+      height: 45
+    spriteID: 4c63fb4085c961c45bb7fa300a156232
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 255, y: 362}
+  - name: biglilguy_Frame_28
+    originalName: 
+    pivot: {x: 0.39999998, y: -0.08695652}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 206
+      y: 333
+      width: 40
+      height: 46
+    spriteID: b9dd7231c8fda1743a81c0b4022cab85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 206, y: 333}
+  - name: biglilguy_Frame_29
+    originalName: 
+    pivot: {x: 0.425, y: -0.021276595}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 206
+      y: 223
+      width: 40
+      height: 47
+    spriteID: 0aadc94ba998a66488a0ea6ab876a2af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 206, y: 223}
+  - name: biglilguy_Frame_30
+    originalName: 
+    pivot: {x: 0.45000002, y: -0.021276595}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 206
+      y: 278
+      width: 40
+      height: 47
+    spriteID: 74be5538b311ee74bb0558369a2487a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 206, y: 278}
+  - name: biglilguy_Frame_31
+    originalName: 
+    pivot: {x: 0.425, y: -0.020833332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 452
+      width: 40
+      height: 48
+    spriteID: b96f77ab194d53547a8e2547d6246775
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 452}
+  - name: biglilguy_Frame_32
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.06521739}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 274
+      width: 43
+      height: 46
+    spriteID: 571876ac12b2c9b46adb083e2eb42300
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 274}
+  - name: biglilguy_Frame_33
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.06666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 163
+      width: 43
+      height: 45
+    spriteID: c7ddce68bfcab8d409fdd39710de946c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 163}
+  - name: biglilguy_Frame_34
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.069767445}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 255
+      y: 208
+      width: 43
+      height: 43
+    spriteID: f6424228c19070c4a961fd17627c643c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 255, y: 208}
+  - name: biglilguy_Frame_35
+    originalName: 
+    pivot: {x: 0.43902442, y: -0.07142857}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 306
+      y: 4
+      width: 41
+      height: 42
+    spriteID: 2c1fac1ec3641a34c8506fe9e75f0593
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 306, y: 4}
+  - name: biglilguy_Frame_36
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.07142857}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 255
+      y: 259
+      width: 43
+      height: 42
+    spriteID: 09b8ed5faddc96541ba349b8fc386644
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 255, y: 259}
+  - name: biglilguy_Frame_37
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.06818182}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 372
+      width: 43
+      height: 44
+    spriteID: d0b2edd3468dcb2479c70a85be862a82
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 372}
+  - name: biglilguy_Frame_38
+    originalName: 
+    pivot: {x: 0.45238096, y: -0.02173913}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 398
+      width: 42
+      height: 46
+    spriteID: 0d23de767665cde4a8fe95f02eae45e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 398}
+  - name: biglilguy_Frame_39
+    originalName: 
+    pivot: {x: 0.45238096, y: -0.020833332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 60
+      width: 42
+      height: 48
+    spriteID: 0aa68922bf16c8044ad795ad61bb3380
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 60}
+  - name: biglilguy_Frame_40
+    originalName: 
+    pivot: {x: 0.45238096, y: -0.020833332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 116
+      width: 42
+      height: 48
+    spriteID: 072f6930a8034ec4488ff120f70e2d0b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 116}
+  - name: biglilguy_Frame_41
+    originalName: 
+    pivot: {x: 0.45238096, y: -0.020833332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 172
+      width: 42
+      height: 48
+    spriteID: 2099e6981e1ea074e8cc1ecd70b05ce8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 172}
+  - name: biglilguy_Frame_42
+    originalName: 
+    pivot: {x: 0.45238096, y: -0.020833332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 228
+      width: 42
+      height: 48
+    spriteID: 467727224810814488166925a4de7ee5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 228}
+  - name: biglilguy_Frame_43
+    originalName: 
+    pivot: {x: 0.45238096, y: -0.10638298}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 328
+      width: 42
+      height: 47
+    spriteID: 743f45877ccea5941a9d554b589e845a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 328}
+  - name: biglilguy_Frame_44
+    originalName: 
+    pivot: {x: 0.45238096, y: -0.10638298}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 383
+      width: 42
+      height: 47
+    spriteID: 48f8ba88df7bef342ad92e47322b711f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 383}
+  - name: biglilguy_Frame_45
+    originalName: 
+    pivot: {x: 0.45238096, y: -0.08510638}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 438
+      width: 42
+      height: 47
+    spriteID: 821449f704f28984883a1ae3846f14e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 438}
+  - name: biglilguy_Frame_46
+    originalName: 
+    pivot: {x: 0.45238096, y: -0.021276595}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 286
+      width: 42
+      height: 47
+    spriteID: 91ce9e4d9eac54f45b3e7a5fe5d5a932
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 286}
+  - name: biglilguy_Frame_47
+    originalName: 
+    pivot: {x: 0.45238096, y: -0.020833332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 284
+      width: 42
+      height: 48
+    spriteID: 1ec8bc47bd883bb41a3dbf57b67da638
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 284}
+  - name: biglilguy_Frame_48
+    originalName: 
+    pivot: {x: 0.45238096, y: -0.020833332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 340
+      width: 42
+      height: 48
+    spriteID: 906c54538cee25b40bdb96a08b70840e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 340}
+  - name: biglilguy_Frame_49
+    originalName: 
+    pivot: {x: 0.45238096, y: -0.020833332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 396
+      width: 42
+      height: 48
+    spriteID: 86bf21e642fdc494a920fe01fa725342
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 396}
+  - name: biglilguy_Frame_50
+    originalName: 
+    pivot: {x: 0.45238096, y: -0.020833332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 452
+      width: 42
+      height: 48
+    spriteID: 43bea59994189254d89f32f6af1520c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 452}
+  - name: biglilguy_Frame_51
+    originalName: 
+    pivot: {x: 0.45238096, y: -0.020833332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 4
+      width: 42
+      height: 48
+    spriteID: d9b5aa4016fc3a342b3f69e489c70afb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 4}
+  - name: biglilguy_Frame_52
+    originalName: 
+    pivot: {x: 0.45238096, y: -0.020833332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 60
+      width: 42
+      height: 48
+    spriteID: e942bdb9b5625e748b7c0d29836e6ad7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 60}
+  - name: biglilguy_Frame_53
+    originalName: 
+    pivot: {x: 0.45238096, y: -0.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 116
+      width: 42
+      height: 48
+    spriteID: 5b480b18c63cd364bb676872093d2cb8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 116}
+  - name: biglilguy_Frame_54
+    originalName: 
+    pivot: {x: 0.45238096, y: -0.08333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 172
+      width: 42
+      height: 48
+    spriteID: a3ff651413aea574eb5cc62c17c1aec6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 172}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1086143484
+    name: biglilguy
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: biglilguy_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 46
+      spriteId: 1b5dd59bab2d51d4595ef05881806613
+    - name: biglilguy_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 45
+      spriteId: b98b4cc1bbc4f434195645e228a84174
+    - name: biglilguy_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 45
+      spriteId: 823d344346d6c594b9c4f73d30a735ea
+    - name: biglilguy_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 44
+      spriteId: 7687facf2a066af46b81fbd7d35e5388
+    - name: biglilguy_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 44
+      spriteId: c3e11201e5dee984c8f8616fb35cc382
+    - name: biglilguy_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 43
+      spriteId: c23073d6c1cae5b408a5274dd7520626
+    - name: biglilguy_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 43
+      spriteId: 1afce4cf6b6b0f2438fa8aa733c1059f
+    - name: biglilguy_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 43
+      spriteId: a5ffd91fa96b7b34b8138e5e5130e896
+    - name: biglilguy_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 43
+      spriteId: e4c5845fd2ef4e44ea57651c4c2991b8
+    - name: biglilguy_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 44
+      spriteId: 78cc88a69a96ad2469a574e0f91ac806
+    - name: biglilguy_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 45
+      spriteId: dcc12a71736c67745843a9d32b3e73a9
+    - name: biglilguy_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 46
+      spriteId: 677302e8a33a77f419466cbcc325b46e
+    - name: biglilguy_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 46
+      spriteId: 3c3d3e38bbb848647b6fcf834fb8efa5
+    - name: biglilguy_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 46
+      spriteId: 7d2674ab475633e448dc545b258b576e
+    - name: biglilguy_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 46
+      spriteId: 59ef6c27a598bc34f8672fe3fbc88cb7
+    - name: biglilguy_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 7
+        y: 3
+        width: 41
+        height: 46
+      spriteId: 88e66c796cddd0047adb2e507edde194
+    - name: biglilguy_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 7
+        y: 3
+        width: 41
+        height: 46
+      spriteId: 321422699dd3a004ca6f32f17a40a2f9
+    - name: biglilguy_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 3
+        width: 39
+        height: 46
+      spriteId: bc76e5462b7c59c4dab12fc7efa15250
+    - name: biglilguy_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 1
+        width: 42
+        height: 48
+      spriteId: a056713b5d082ca449df305d53ae8b58
+    - name: biglilguy_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 3
+        width: 40
+        height: 50
+      spriteId: 295545fd3afb5cb46b774c83f3c8aa9a
+    - name: biglilguy_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 4
+        width: 40
+        height: 49
+      spriteId: 2dc32a52ccc00634ea3f5d13c6f8a9e8
+    - name: biglilguy_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 3
+        width: 40
+        height: 47
+      spriteId: f8d7eb3ab3b77544b825ed78f7c974d4
+    - name: biglilguy_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 1
+        width: 40
+        height: 47
+      spriteId: e7e26cd4ddd4b03418f99385bcfb53cc
+    - name: biglilguy_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 1
+        width: 40
+        height: 47
+      spriteId: 06f6ff059c2ce0d4e98fc9eca960aba6
+    - name: biglilguy_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 1
+        width: 40
+        height: 45
+      spriteId: 9daedb3cf71cc7243b398ea3ace8ee32
+    - name: biglilguy_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 1
+        width: 40
+        height: 45
+      spriteId: b945475918c19f4418b209452e338b3b
+    - name: biglilguy_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 1
+        width: 40
+        height: 45
+      spriteId: 1b6b876cb3c3c304bb485e69b50fdab3
+    - name: biglilguy_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 4
+        width: 40
+        height: 45
+      spriteId: 4c63fb4085c961c45bb7fa300a156232
+    - name: biglilguy_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 9
+        y: 4
+        width: 40
+        height: 46
+      spriteId: b9dd7231c8fda1743a81c0b4022cab85
+    - name: biglilguy_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 8
+        y: 1
+        width: 40
+        height: 47
+      spriteId: 0aadc94ba998a66488a0ea6ab876a2af
+    - name: biglilguy_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 7
+        y: 1
+        width: 40
+        height: 47
+      spriteId: 74be5538b311ee74bb0558369a2487a4
+    - name: biglilguy_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 8
+        y: 1
+        width: 40
+        height: 48
+      spriteId: b96f77ab194d53547a8e2547d6246775
+    - name: biglilguy_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 46
+      spriteId: 571876ac12b2c9b46adb083e2eb42300
+    - name: biglilguy_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 45
+      spriteId: c7ddce68bfcab8d409fdd39710de946c
+    - name: biglilguy_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 43
+      spriteId: f6424228c19070c4a961fd17627c643c
+    - name: biglilguy_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 7
+        y: 3
+        width: 41
+        height: 42
+      spriteId: 2c1fac1ec3641a34c8506fe9e75f0593
+    - name: biglilguy_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 42
+      spriteId: 09b8ed5faddc96541ba349b8fc386644
+    - name: biglilguy_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 3
+        width: 43
+        height: 44
+      spriteId: d0b2edd3468dcb2479c70a85be862a82
+    - name: biglilguy_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 1
+        width: 42
+        height: 46
+      spriteId: 0d23de767665cde4a8fe95f02eae45e8
+    - name: biglilguy_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 1
+        width: 42
+        height: 48
+      spriteId: 0aa68922bf16c8044ad795ad61bb3380
+    - name: biglilguy_Frame_40
+      frameIndex: 40
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 1
+        width: 42
+        height: 48
+      spriteId: 072f6930a8034ec4488ff120f70e2d0b
+    - name: biglilguy_Frame_41
+      frameIndex: 41
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 1
+        width: 42
+        height: 48
+      spriteId: 2099e6981e1ea074e8cc1ecd70b05ce8
+    - name: biglilguy_Frame_42
+      frameIndex: 42
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 1
+        width: 42
+        height: 48
+      spriteId: 467727224810814488166925a4de7ee5
+    - name: biglilguy_Frame_43
+      frameIndex: 43
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 5
+        width: 42
+        height: 47
+      spriteId: 743f45877ccea5941a9d554b589e845a
+    - name: biglilguy_Frame_44
+      frameIndex: 44
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 5
+        width: 42
+        height: 47
+      spriteId: 48f8ba88df7bef342ad92e47322b711f
+    - name: biglilguy_Frame_45
+      frameIndex: 45
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 4
+        width: 42
+        height: 47
+      spriteId: 821449f704f28984883a1ae3846f14e6
+    - name: biglilguy_Frame_46
+      frameIndex: 46
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 1
+        width: 42
+        height: 47
+      spriteId: 91ce9e4d9eac54f45b3e7a5fe5d5a932
+    - name: biglilguy_Frame_47
+      frameIndex: 47
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 1
+        width: 42
+        height: 48
+      spriteId: 1ec8bc47bd883bb41a3dbf57b67da638
+    - name: biglilguy_Frame_48
+      frameIndex: 48
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 1
+        width: 42
+        height: 48
+      spriteId: 906c54538cee25b40bdb96a08b70840e
+    - name: biglilguy_Frame_49
+      frameIndex: 49
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 1
+        width: 42
+        height: 48
+      spriteId: 86bf21e642fdc494a920fe01fa725342
+    - name: biglilguy_Frame_50
+      frameIndex: 50
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 1
+        width: 42
+        height: 48
+      spriteId: 43bea59994189254d89f32f6af1520c7
+    - name: biglilguy_Frame_51
+      frameIndex: 51
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 1
+        width: 42
+        height: 48
+      spriteId: d9b5aa4016fc3a342b3f69e489c70afb
+    - name: biglilguy_Frame_52
+      frameIndex: 52
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 1
+        width: 42
+        height: 48
+      spriteId: e942bdb9b5625e748b7c0d29836e6ad7
+    - name: biglilguy_Frame_53
+      frameIndex: 53
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 3
+        width: 42
+        height: 48
+      spriteId: 5b480b18c63cd364bb676872093d2cb8
+    - name: biglilguy_Frame_54
+      frameIndex: 54
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 4
+        width: 42
+        height: 48
+      spriteId: a3ff651413aea574eb5cc62c17c1aec6
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: iPhone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 50, y: 53}

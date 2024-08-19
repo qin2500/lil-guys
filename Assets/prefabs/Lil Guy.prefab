@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1054552953050348181}
   - component: {fileID: 1194855749584963788}
+  - component: {fileID: 5330304841705850993}
   m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
@@ -73,8 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: -6367625834748823472, guid: 62d24324929726d43b2f738df6aee013, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -84,6 +85,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &5330304841705850993
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6549142513506874356}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4521d7c6c92c15a4e9944be374e1c682, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8451870551777827836
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,6 +120,7 @@ GameObject:
   - component: {fileID: 5024271257300210585}
   - component: {fileID: 3701457831299487030}
   - component: {fileID: 7894752289638684333}
+  - component: {fileID: -4522527610801394477}
   m_Layer: 8
   m_Name: Lil Guy
   m_TagString: Untagged
@@ -115,7 +138,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.44, y: -3.778, z: -0.13513021}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1054552953050348181}
@@ -153,8 +176,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000023841858, y: -0.0047585964}
-  m_Size: {x: 0.21501493, y: 0.21501493}
+  m_Offset: {x: -0.0010511875, y: 0.07766771}
+  m_Size: {x: 0.10498953, y: 0.10498953}
   m_Direction: 0
 --- !u!50 &121912185109394994
 Rigidbody2D:
@@ -197,10 +220,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   rb: {fileID: 0}
-  speed: 25
+  speed: 15
   followDistance: 1
   running: 0
-  fasterSpeed: 30
+  fasterSpeed: 25
   head: 0
   distance: 0
 --- !u!114 &3701457831299487030
@@ -233,3 +256,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToDisable: 4
   collisionParticleEffect: {fileID: 2669113163075602650, guid: 94ffdcbf7299efc448e717e93556fb57, type: 3}
+--- !u!114 &-4522527610801394477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8451870551777827836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c513607791f77ed4598c9d5e7be89761, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAnimator: {fileID: 5330304841705850993}
+  sprite: {fileID: 1194855749584963788}
