@@ -62,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
         if (inputData.jumpPressed)
         {
             //SoundFXManager.instance.PlaySoundFXClip(jumpClip, transform, 1f);
+            GlobalEvents.PlayerStartedMoving.invoke();
             jumping = true;
             jumpTime = timeAC;
         }
@@ -118,6 +119,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
+            GlobalEvents.PlayerStartedMoving.invoke();
             curVelocity.x = Mathf.MoveTowards(curVelocity.x, inputData.horizonatal * settings.maxSpeed, settings.acceleration * Time.fixedDeltaTime);
         }
     }

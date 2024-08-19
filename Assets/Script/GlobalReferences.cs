@@ -27,11 +27,11 @@ public class Player
     private int score;
     private int exp;
     private int level;
+    private int lilGuyCount = 0;
     private GameObject playerObject;
     public string Username { get { return username; } set { username = value; } }
     public int Score { get { return score; } set { score = value; } }
     public Vector2 startPosition = new Vector2(-2.62f, 3.55f);
-    public int potionCooldown = 30;
     public int Level { get { return level; } set { level = value; } }
     public int Exp { get { return exp; } set { exp = value; } }
 
@@ -42,6 +42,8 @@ public class Player
         this.exp = 0;
         this.level = 0;
     }
+
+    public int LilGuyCount { get { return lilGuyCount;} set {   lilGuyCount = value; } }
 }
 
 

@@ -12,7 +12,16 @@ public class LevelManager : MonoBehaviour
 
     private bool stopUpdating = false;
 
+    private float _currentTime = 0;
+
+    private float _totalTime = 0;
+
+    private bool _timerActive = false;
+
     [SerializeField] private TMP_Text levelCounter;
+    [SerializeField] private TMP_Text timer;
+   [SerializeField] private TMP_Text lilGuyCount;
+
 
     [SerializeField] private GameObject pauseMenu;
 
@@ -47,7 +56,7 @@ public class LevelManager : MonoBehaviour
 
         if (GlobalEvents.PlayerStartedMoving.Invoked() && !GlobalEvents.PlayerPause.Invoked())
         {
-            //will probably signal level to start/resume
+           _timerActive = true;
         }
 
         if (GlobalEvents.PlayerDeath.Invoked())
@@ -84,6 +93,19 @@ public class LevelManager : MonoBehaviour
             togglePauseMenu();
 
         }
+
+        if (_timerActive)
+        {
+            _currentTime += Time.deltaTime;
+        }
+
+        TimeSpan time = TimeSpan.FromSeconds(_currentTime);
+        timer.text = time.Minutes + ":" + time.Seconds + ":" + time.Milliseconds;
+
+        lilGuyCount.text = ": " + GlobalReferences.PLAYER.LilGuyCount + "x";
+
+
+
 
     }
 
@@ -157,6 +179,8 @@ public class LevelManager : MonoBehaviour
                 GlobalEvents.PlayerPause.uninvoke();
             //};
 
+            if (GlobalEvents.PlayerStartedMoving.Invoked()) _timerActive = false;
+
             pauseMenu.SetActive(false);
         }
         else
@@ -164,7 +188,10 @@ public class LevelManager : MonoBehaviour
           //  SceneManager.LoadSceneAsync("PauseMenu", mode: LoadSceneMode.Additive).completed += (asyncOperation) => 
            // { 
                 GlobalEvents.PlayerPause.invoke();
-          //  };
+            //  };
+
+            _timerActive = false;
+
 
             pauseMenu.SetActive(true);
         }
