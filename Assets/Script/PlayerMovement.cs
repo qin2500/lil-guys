@@ -158,7 +158,8 @@ public class PlayerMovement : MonoBehaviour
     }
     public void bonusJump()
     {
-        curVelocity.y = settings.bonusJumpPower;
+        Vector2 dir = new Vector2(inputData.horizonatal, inputData.vertical + 0.5f).normalized;
+        curVelocity += dir * settings.bonusJumpPower;
     }
 
     public void jump()
