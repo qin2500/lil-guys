@@ -54,7 +54,7 @@ public class Throwable : MonoBehaviour
 
                 if (damageable != null)
                 {
-                    damageable.TakeDamage(1); //TODO: make this variable if necessary
+                    damageable.takeDamage(1); //TODO: make this variable if necessary
                 }
             }
     }

@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 7339723311569189204}
   m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43a36db19bd9a5441b2d1d74f725fb78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lilGuyPrefab: {fileID: 0}
+  lilGuyPrefab: {fileID: 8451870551777827836, guid: 94a102346b05131458a7738b14e20ec9, type: 3}
   lilGuySpawn: {fileID: 8948536272782853232}
   positionUpdater: {fileID: 1586877077803988735}
   lilGuysCatchUpDistance: 3
@@ -278,4 +278,4 @@ MonoBehaviour:
   delayTime: 0.1
   updateFrequency: 0.05
   positions: 0
-  hasFollower: 0
+  follower: {fileID: 0}
