@@ -43,3 +43,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BG0
+    uniqueID: 2827102849
+    locked: 0
+  - name: BG1
+    uniqueID: 1594073029
+    locked: 0
+  - name: BG2
+    uniqueID: 3542925933
+    locked: 0
+  - name: BG3
+    uniqueID: 984983461
+    locked: 0
+  - name: BG4
+    uniqueID: 3417948489
+    locked: 0
+  - name: BG5
+    uniqueID: 983480101
+    locked: 0
+  - name: Foreplay
+    uniqueID: 3239986845
+    locked: 0
