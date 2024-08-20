@@ -1171,7 +1171,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 649182235}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2812146823951878367, guid: f6f6279a75728e841bd01a80e54ec234, type: 3}
       propertyPath: m_Name
@@ -1179,15 +1179,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3737960313079967133, guid: f6f6279a75728e841bd01a80e54ec234, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 201.58768
+      value: 211.8
       objectReference: {fileID: 0}
     - target: {fileID: 3737960313079967133, guid: f6f6279a75728e841bd01a80e54ec234, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.840504
+      value: -2.99
       objectReference: {fileID: 0}
     - target: {fileID: 3737960313079967133, guid: f6f6279a75728e841bd01a80e54ec234, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.30390054
+      value: 0.16877031
       objectReference: {fileID: 0}
     - target: {fileID: 3737960313079967133, guid: f6f6279a75728e841bd01a80e54ec234, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1195,15 +1195,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3737960313079967133, guid: f6f6279a75728e841bd01a80e54ec234, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3737960313079967133, guid: f6f6279a75728e841bd01a80e54ec234, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3737960313079967133, guid: f6f6279a75728e841bd01a80e54ec234, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3737960313079967133, guid: f6f6279a75728e841bd01a80e54ec234, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1223,11 +1223,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6f6279a75728e841bd01a80e54ec234, type: 3}
---- !u!4 &574971896 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3737960313079967133, guid: f6f6279a75728e841bd01a80e54ec234, type: 3}
-  m_PrefabInstance: {fileID: 574971895}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &590179030
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,8 +1553,6 @@ Transform:
   - {fileID: 1830578633}
   - {fileID: 891054941}
   - {fileID: 590179031}
-  - {fileID: 1522396089}
-  - {fileID: 574971896}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &685268623
@@ -1907,7 +1900,11 @@ Transform:
   m_GameObject: {fileID: 887143347}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -1.9501932, y: -0.43000007, z: -10}
+=======
+  m_LocalPosition: {x: -1.950466, y: -0.43000007, z: -10}
+>>>>>>> parent of ad9caf3 (Merge branch 'main' of https://github.com/qin2500/lil-guys into jp)
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1922,29 +1919,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 649182235}
     m_Modifications:
-    - target: {fileID: -7126128818008317093, guid: 79bca88bb1b8f6e45ab087fbe4bc49bb, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -6748793081650636750, guid: 95e10d438cc36a14a86f4ba5baff15b4, type: 3}
     - target: {fileID: 2812146823951878367, guid: 79bca88bb1b8f6e45ab087fbe4bc49bb, type: 3}
       propertyPath: m_Name
       value: Breakable Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3737960313079967133, guid: 79bca88bb1b8f6e45ab087fbe4bc49bb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3737960313079967133, guid: 79bca88bb1b8f6e45ab087fbe4bc49bb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3737960313079967133, guid: 79bca88bb1b8f6e45ab087fbe4bc49bb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 56.88
+      value: 59.79
       objectReference: {fileID: 0}
     - target: {fileID: 3737960313079967133, guid: 79bca88bb1b8f6e45ab087fbe4bc49bb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.43
+      value: 26.92
       objectReference: {fileID: 0}
     - target: {fileID: 3737960313079967133, guid: 79bca88bb1b8f6e45ab087fbe4bc49bb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1978,87 +1963,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8701166567348623668, guid: 79bca88bb1b8f6e45ab087fbe4bc49bb, type: 3}
-      propertyPath: m_SpriteTilingProperty.pivot.x
-      value: 0.4864865
-      objectReference: {fileID: 0}
-    - target: {fileID: 8701166567348623668, guid: 79bca88bb1b8f6e45ab087fbe4bc49bb, type: 3}
-      propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8701166567348623668, guid: 79bca88bb1b8f6e45ab087fbe4bc49bb, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.15625
-      objectReference: {fileID: 0}
-    - target: {fileID: 8701166567348623668, guid: 79bca88bb1b8f6e45ab087fbe4bc49bb, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1342524885699026225, guid: 79bca88bb1b8f6e45ab087fbe4bc49bb, type: 3}
-    - {fileID: 8701166567348623668, guid: 79bca88bb1b8f6e45ab087fbe4bc49bb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2812146823951878367, guid: 79bca88bb1b8f6e45ab087fbe4bc49bb, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 891054943}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79bca88bb1b8f6e45ab087fbe4bc49bb, type: 3}
 --- !u!4 &891054941 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3737960313079967133, guid: 79bca88bb1b8f6e45ab087fbe4bc49bb, type: 3}
   m_PrefabInstance: {fileID: 891054940}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &891054942 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2812146823951878367, guid: 79bca88bb1b8f6e45ab087fbe4bc49bb, type: 3}
-  m_PrefabInstance: {fileID: 891054940}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &891054943
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891054942}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.015625, y: 2}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.4864865, y: 0}
-    oldSize: {x: 1.15625, y: 4}
-    newSize: {x: 0.44, y: 0.58}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.15625, y: 4}
-  m_EdgeRadius: 0
 --- !u!1 &897683649
 GameObject:
   m_ObjectHideFlags: 0
@@ -2257,7 +2172,11 @@ Transform:
   m_GameObject: {fileID: 986784643}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -1.9501932, y: -0.43000007, z: -10}
+=======
+  m_LocalPosition: {x: -1.950466, y: -0.43000007, z: -10}
+>>>>>>> parent of ad9caf3 (Merge branch 'main' of https://github.com/qin2500/lil-guys into jp)
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2894,6 +2813,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8008309046819196987, guid: d54c0cc3e4567fb43bfb0700b178df7f, type: 3}
   m_PrefabInstance: {fileID: 1461501628}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &1522396088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3097,6 +3017,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of ad9caf3 (Merge branch 'main' of https://github.com/qin2500/lil-guys into jp)
 --- !u!1 &1563281001 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3127008572253729592, guid: ec1689588d7f0304baf05b8a23a6b84a, type: 3}
@@ -3418,8 +3340,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 983480101
-  m_SortingLayer: 6
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0.00048828125, z: 0}
@@ -120752,14 +120674,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1280119105876929034, guid: ec1689588d7f0304baf05b8a23a6b84a, type: 3}
-      propertyPath: m_SortingLayer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280119105876929034, guid: ec1689588d7f0304baf05b8a23a6b84a, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 983480101
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280119105876929034, guid: ec1689588d7f0304baf05b8a23a6b84a, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
@@ -120882,5 +120796,9 @@ SceneRoots:
   - {fileID: 986784646}
   - {fileID: 7378225194606348239}
   - {fileID: 649182235}
+<<<<<<< HEAD
   - {fileID: 1530271755}
   - {fileID: 1156484316}
+=======
+  - {fileID: 574971895}
+>>>>>>> parent of ad9caf3 (Merge branch 'main' of https://github.com/qin2500/lil-guys into jp)

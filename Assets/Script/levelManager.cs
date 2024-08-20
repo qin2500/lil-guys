@@ -61,21 +61,17 @@ public class LevelManager : MonoBehaviour
 
         if (GlobalEvents.PlayerDeath.Invoked())
         {
-            GlobalEvents.PlayerDeath.uninvoke();
-
-            stopUpdating = true;
             Debug.Log("Player Death Invoked");
-
+            GlobalEvents.PlayerDeath.uninvoke();
+            stopUpdating = true;
             restartLevel();
-            stopUpdating = false;
             GlobalEvents.LevelComplete.uninvoke();
-            resetTimer();
+            stopUpdating = false;
             return;
         }
 
         if (GlobalEvents.LevelComplete.Invoked())
         {
-            GlobalEvents.LevelComplete.uninvoke();
             completeLevel();
                return;
         }
@@ -221,16 +217,11 @@ public class LevelManager : MonoBehaviour
         }else
         {
             _totalTime += _currentTime;
-            resetTimer();
+            _currentTime = 0;
             //GlobalEvents.PlayerStartedMoving.uninvoke(); //maybe
             _timerActive = false;
             incrementLevel();
 
         }
-    }
-
-    private void resetTimer()
-    {
-        _currentTime = 0;
     }
 }
