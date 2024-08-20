@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private LilGuysManager lilGuysManager;
+    [SerializeField] private GameObject deathParticle;
     void Start()
     {
         lilGuysManager = GetComponent<LilGuysManager>();      
@@ -17,7 +18,9 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Death"))
         {
+            Instantiate(deathParticle, transform.position, Quaternion.identity);
             playerDeath();
+
         }
     }
     private void playerDeath()
