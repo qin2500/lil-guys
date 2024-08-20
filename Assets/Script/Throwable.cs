@@ -42,6 +42,7 @@ public class Throwable : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (throwPower == 0) return;
+        Debug.Log(collision.gameObject.name);
 
         Instantiate(collisionParticleEffect, this.gameObject.transform.position, Quaternion.identity);
 
