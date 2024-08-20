@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     {
         if (this.gameObject.activeSelf && collision.gameObject.CompareTag("Death"))
         {
+            Debug.Log("Collided with death");
+            lilGuysManager.genocide();
             this.gameObject.SetActive(false);
             GameObject death = Instantiate(deathParticle, transform.position, transform.rotation);
 
@@ -28,7 +30,6 @@ public class PlayerController : MonoBehaviour
     private void playerDeath()
     {
         Debug.Log("Player is Die");
-        lilGuysManager.genocide();
         this.gameObject.SetActive(false);
     }
 }
