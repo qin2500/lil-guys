@@ -43,11 +43,14 @@ public class PlayerMovement : MonoBehaviour
         cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
         jumping = false;
         coyoteOn = false;
-        //GlobalReferences.PLAYER.PlayerObject = this.gameObject;
+        GlobalReferences.PLAYER.PlayerObject = this.gameObject;
     }
 
     private void Update()
     {
+
+        if (GlobalEvents.PlayerPause.Invoked()) return;
+
         timeAC += Time.deltaTime;
         inputData = new InputData
         {
@@ -59,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
         if (inputData.jumpPressed)
         {
             //SoundFXManager.instance.PlaySoundFXClip(jumpClip, transform, 1f);
+            GlobalEvents.PlayerStartedMoving.invoke();
             jumping = true;
             jumpTime = timeAC;
         }
@@ -67,6 +71,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (GlobalEvents.PlayerPause.Invoked()) return;
+
         CheckCollision();
 
         handleJump();
@@ -113,6 +119,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
+            GlobalEvents.PlayerStartedMoving.invoke();
             curVelocity.x = Mathf.MoveTowards(curVelocity.x, inputData.horizonatal * settings.maxSpeed, settings.acceleration * Time.fixedDeltaTime);
         }
     }

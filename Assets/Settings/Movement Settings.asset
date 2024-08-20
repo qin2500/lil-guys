@@ -19,14 +19,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   intergerInputSnapping: 1
-  maxSpeed: 35
-  acceleration: 120
+  maxSpeed: 20
+  acceleration: 100
   groundDeceleration: 120
   airDeceleration: 15
   groundingForce: -1.5
   groundedDistance: 0.05
-  jumpPower: 30
-  bonusJumpPower: 45
+  jumpPower: 20
+  bonusJumpPower: 40
   maxFallSpeed: 40
   fallAcceleration: 110
   jumpEndEarlyGravityModifier: 3
