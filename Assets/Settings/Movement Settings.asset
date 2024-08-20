@@ -20,7 +20,7 @@ MonoBehaviour:
     m_Bits: 128
   intergerInputSnapping: 1
   maxSpeed: 20
-  acceleration: 120
+  acceleration: 100
   groundDeceleration: 120
   airDeceleration: 15
   groundingForce: -1.5
