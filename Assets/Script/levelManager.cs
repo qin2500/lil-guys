@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
 
-    private int _level = 0;
+    private int _level = -1;
 
     private bool stopUpdating = false;
 
@@ -61,6 +61,7 @@ public class LevelManager : MonoBehaviour
 
         if (GlobalEvents.PlayerDeath.Invoked())
         {
+            Debug.Log("Player Death Invoked");
             restartLevel();
             GlobalEvents.PlayerDeath.uninvoke();
             GlobalEvents.LevelComplete.uninvoke();
@@ -75,6 +76,8 @@ public class LevelManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R) && !GlobalEvents.PlayerPause.Invoked())
         {
+            Debug.Log("Restart invoked");
+
             if (GlobalEvents.PlayerPause.Invoked()) togglePauseMenu();
             GlobalEvents.PlayerPause.uninvoke();
             restartLevel();
@@ -108,13 +111,6 @@ public class LevelManager : MonoBehaviour
 
     public void setLevel(int level)
     {
-
-        if (level == 0)
-        {
-            Debug.Log("Some bozo tried to set the level to 0");
-            throw new Exception("level cannot be set to 0");
-        }
-
         Unloadlevel(() =>
         {
             this._level = level;
@@ -132,7 +128,7 @@ public class LevelManager : MonoBehaviour
     public void Unloadlevel(System.Action callback)
     {
         Debug.Log("unload level called for level: " + this._level);
-        if (this._level > 0)
+        if (this._level >= 0)
         {
             Debug.Log("Unloading level: " + this._level);
             SceneManager.UnloadSceneAsync("level " + this._level).completed += (asyncOperation) =>
