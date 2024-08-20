@@ -27,7 +27,7 @@ public class SiblingRuleTile : RuleTile
             case TilingRule.Neighbor.NotThis:
                 {
 
-                    return (other is SiblingRuleTile
+                    return !(other is SiblingRuleTile
                         && (other as SiblingRuleTile).sibingGroup == this.sibingGroup);
                 }
         }
