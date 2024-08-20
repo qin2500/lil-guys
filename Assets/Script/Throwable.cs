@@ -10,6 +10,7 @@ public class Throwable : MonoBehaviour
     private float throwPower = 0;
     private LayerMask ground;
     private Quaternion initialRotation;
+    private bool checkCollisions = false;
 
     public float timeToDisable;
     [SerializeField] public GameObject collisionParticleEffect;
@@ -20,6 +21,11 @@ public class Throwable : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void LateUpdate()
+    {
+        if (throwPower > 0) checkCollisions = true;
     }
 
     private IEnumerator ApplyInitialForce()
@@ -41,7 +47,7 @@ public class Throwable : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (throwPower == 0) return;
+        if (!checkCollisions) return;
 
         Instantiate(collisionParticleEffect, this.gameObject.transform.position, Quaternion.identity);
 

@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6136770390779916925}
@@ -73,8 +73,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.7317086, b: 0, a: 1}
+  m_Sprite: {fileID: -4215272146247106730, guid: e01267d20f5272e498b60c64e65b49e3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -217,8 +217,8 @@ MonoBehaviour:
   positionUpdater: {fileID: 1586877077803988735}
   lilGuysCatchUpDistance: 3
   homicideParticleEffect: {fileID: 2669113163075602650, guid: 59af2ebc2753d994ab9b3ccfd116989f, type: 3}
-  throwPower: 5
-  timeToDisableThrownGuy: 3
+  throwPower: 20
+  timeToDisableThrownGuy: 4
 --- !u!114 &7339723311569189204
 MonoBehaviour:
   m_ObjectHideFlags: 0
