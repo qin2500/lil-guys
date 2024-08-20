@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Throwable : MonoBehaviour
 {
-
+    
     private Rigidbody2D rb;
     private float throwPower = 0;
     private LayerMask ground;
@@ -14,13 +14,14 @@ public class Throwable : MonoBehaviour
 
     public float timeToDisable;
     [SerializeField] public GameObject collisionParticleEffect;
-
+    [SerializeField] private AudioClip throwClip;
+    [SerializeField] private AudioClip hitClip;
     // Start is called before the first frame update
-
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+
     }
 
     private void LateUpdate()
