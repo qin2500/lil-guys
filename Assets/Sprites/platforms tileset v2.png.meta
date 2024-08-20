@@ -975,6 +975,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: platforms tileset v2_40
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839da4512a0741f4fb1d3a0d1783a90a
+      internalID: 1180257240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1021,6 +1042,7 @@ TextureImporter:
       platforms tileset v2_38: 1583723544
       platforms tileset v2_39: -837814355
       platforms tileset v2_4: 625851169
+      platforms tileset v2_40: 1180257240
       platforms tileset v2_5: 1056880449
       platforms tileset v2_6: 1208887333
       platforms tileset v2_7: 848715037
