@@ -16,10 +16,12 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Death"))
+        if (this.gameObject.activeSelf && collision.gameObject.CompareTag("Death"))
         {
-            Instantiate(deathParticle, transform.position, Quaternion.identity);
-            playerDeath();
+            this.gameObject.SetActive(false);
+            GameObject death = Instantiate(deathParticle, transform.position, transform.rotation);
+
+            death.GetComponent<Death>().die(30, () => GlobalEvents.PlayerDeath.invoke());
 
         }
     }
