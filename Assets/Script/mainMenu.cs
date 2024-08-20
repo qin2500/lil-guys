@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public void PlayGame(){
-        SceneManager.LoadScene(SceneNames.LEVELCONTROLLER); // make sure the in the build, we have certain scenes preloaded
+
+        SceneManager.UnloadSceneAsync(SceneNames.MAINMENU).completed += (asyncOperation) =>
+        SceneManager.LoadSceneAsync(SceneNames.LEVELCONTROLLER, LoadSceneMode.Additive); // make sure the in the build, we have certain scenes preloaded
     }
     public void QuitGame(){
         Application.Quit();

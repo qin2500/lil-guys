@@ -12,6 +12,7 @@ public class LilGuysManager : MonoBehaviour
     [SerializeField] private GameObject homicideParticleEffect;
     [SerializeField] private float throwPower;
     [SerializeField] private float timeToDisableThrownGuy;
+    [SerializeField] private int startingNumberOfGuys;
 
 
 
@@ -22,6 +23,12 @@ public class LilGuysManager : MonoBehaviour
     void Start()
     {
         playerMovement= GetComponent<PlayerMovement>();
+
+
+        for (int i = 0; i < startingNumberOfGuys; i++)
+        {
+            summonBoy();
+        }
     }
 
     // Update is called once per frame

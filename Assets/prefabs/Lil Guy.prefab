@@ -256,6 +256,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToDisable: 4
   collisionParticleEffect: {fileID: 2669113163075602650, guid: 94ffdcbf7299efc448e717e93556fb57, type: 3}
+  throwClip: {fileID: 8300000, guid: d4d1d26b296b8404eaafcc5e0bd59e77, type: 3}
+  hitClip: {fileID: 8300000, guid: d7ee702679a49a04d9fb57f3109f71ed, type: 3}
 --- !u!114 &-4522527610801394477
 MonoBehaviour:
   m_ObjectHideFlags: 0

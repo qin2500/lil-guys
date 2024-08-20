@@ -43,9 +43,8 @@ public class LevelManager : MonoBehaviour
         pauseMenu.SetActive(false);
         pauseMenu = Instantiate(pauseMenu);
 
-        //load arena
-        setLevel(1);
         //load tutorial
+        setLevel(0);
 
     }
 
