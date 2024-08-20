@@ -8,6 +8,7 @@ using UnityEngine.Events;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] public AudioClip jumpClip;
+    [SerializeField] public AudioClip boostClip;
     [SerializeField] private PlayerMovementSettings settings;
     private Rigidbody2D rb;
     private new CapsuleCollider2D collider;
@@ -61,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
         };
         if (inputData.jumpPressed)
         {
-            //SoundFXManager.instance.PlaySoundFXClip(jumpClip, transform, 1f);
+            SoundFXManager.instance.PlaySoundFXClip(jumpClip, transform, 1f);
             GlobalEvents.PlayerStartedMoving.invoke();
             jumping = true;
             jumpTime = timeAC;
@@ -167,6 +168,8 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 dir = new Vector2(inputData.horizonatal, inputData.vertical + 0.5f).normalized;
         curVelocity += dir * settings.bonusJumpPower;
+        SoundFXManager.instance.PlaySoundFXClip(boostClip, transform, 1f);
+
     }
 
     public void jump()
