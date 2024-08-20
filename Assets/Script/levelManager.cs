@@ -104,9 +104,6 @@ public class LevelManager : MonoBehaviour
 
         lilGuyCount.text = ": " + GlobalReferences.PLAYER.LilGuyCount + "x";
 
-
-
-
     }
 
     public void setLevel(int level)
@@ -122,33 +119,24 @@ public class LevelManager : MonoBehaviour
         {
             this._level = level;
             //TODO: uncomment code after making levels
-            // Debug.Log("Loading level: " + this._level);
-            // SceneManager.LoadSceneAsync("level " + this._level, mode: LoadSceneMode.Additive).completed += (asyncOperation) =>
-            // {
-
-            //      Debug.Log("Loaded level: " + this._level);
-
-            //      levelCounter.text = "Level " + this._level;
-            //};
-
-            
-            loadPlayerMovement();
-
+             Debug.Log("Loading level: " + this._level);
+             SceneManager.LoadSceneAsync("Level " + this._level, mode: LoadSceneMode.Additive).completed += (asyncOperation) =>
+             {
+                  Debug.Log("Loaded level: " + this._level);
+                  levelCounter.text = "Level " + this._level;
+            };
+            //loadPlayerMovement();
         });
     }
 
     public void Unloadlevel(System.Action callback)
     {
-
-
-
-
         Debug.Log("unload level called for level: " + this._level);
         if (this._level > 0)
         {
             Debug.Log("Unloading level: " + this._level);
-            //SceneManager.UnloadSceneAsync("level " + this._level).completed += (asyncOperation) =>
-            SceneManager.UnloadSceneAsync(SceneNames.PLAYERMOVEMENT).completed += (asyncOperation) => //TODO: comment out and uncomment above line
+            SceneManager.UnloadSceneAsync("level " + this._level).completed += (asyncOperation) =>
+            //SceneManager.UnloadSceneAsync(SceneNames.PLAYERMOVEMENT).completed += (asyncOperation) => //TODO: comment out and uncomment above line
             {
                callback();
             };
@@ -219,8 +207,8 @@ public class LevelManager : MonoBehaviour
 
     private void completeLevel()
     {
-        loadMainMenu(); //TODO: replace with increment level until all levels done
-        return;
+        //loadMainMenu(); //TODO: replace with increment level until all levels done
+        //return;
 
         if (this._level == GlobalReferences.NUMLEVELS)
         {
@@ -229,6 +217,10 @@ public class LevelManager : MonoBehaviour
             loadMainMenu();
         }else
         {
+            _totalTime += _currentTime;
+            _currentTime = 0;
+            //GlobalEvents.PlayerStartedMoving.uninvoke(); //maybe
+            _timerActive = false;
             incrementLevel();
 
         }

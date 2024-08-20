@@ -7,8 +7,8 @@ public class SiblingRuleTile : RuleTile
 
     public enum SibingGroup
     {
-        Poles,
-        Terrain,
+        Outer,
+        Inner,
     }
     public SibingGroup sibingGroup;
 
@@ -22,13 +22,13 @@ public class SiblingRuleTile : RuleTile
             case TilingRule.Neighbor.This:
                 {
                     return (other is SiblingRuleTile
-                        && (other as SiblingRuleTile).sibingGroup == this.sibingGroup);
+                        && ((other as SiblingRuleTile).sibingGroup == this.sibingGroup)) || (this.sibingGroup == SibingGroup.Outer && other is SiblingRuleTile && (other as SiblingRuleTile).sibingGroup == SibingGroup.Inner);
                 }
             case TilingRule.Neighbor.NotThis:
                 {
 
-                    return !(other is SiblingRuleTile
-                        && (other as SiblingRuleTile).sibingGroup == this.sibingGroup);
+                    return !((other is SiblingRuleTile
+                        && (other as SiblingRuleTile).sibingGroup == this.sibingGroup) || (this.sibingGroup == SibingGroup.Outer && other is SiblingRuleTile && (other as SiblingRuleTile).sibingGroup == SibingGroup.Inner));
                 }
         }
 
