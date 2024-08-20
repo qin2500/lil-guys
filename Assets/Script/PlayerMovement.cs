@@ -9,7 +9,6 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] public AudioClip jumpClip;
     [SerializeField] private PlayerMovementSettings settings;
-    [SerializeField] private GameObject deathParticleEffect;
     private Rigidbody2D rb;
     private new CapsuleCollider2D collider;
     private Vector2 curVelocity;
@@ -109,18 +108,6 @@ public class PlayerMovement : MonoBehaviour
 
         Physics2D.queriesStartInColliders = cachedQueryStartInColliders;
 
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag.Equals("Death"))
-        {
-            this.gameObject.SetActive(false);
-            GameObject death = Instantiate(deathParticleEffect, transform.position, transform.rotation);
-
-            death.GetComponent<Death>().die(30, () =>  GlobalEvents.PlayerDeath.invoke());
-
-        }
     }
 
     private void movementHandler()

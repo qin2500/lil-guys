@@ -198,7 +198,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpClip: {fileID: 0}
   settings: {fileID: 11400000, guid: a717347476c3cc44ba52e059a70a0084, type: 2}
-  deathParticleEffect: {fileID: 2669113163075602650, guid: 189314d41ceb7ab46ba592e3800db7d5, type: 3}
   isGrounded: 0
   jumping: 0
 --- !u!114 &7891141988221843771
@@ -232,6 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7afc05d6dd9f3c0449cd3b1b204f2426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathParticle: {fileID: 2669113163075602650, guid: 189314d41ceb7ab46ba592e3800db7d5, type: 3}
 --- !u!1 &8948536272782853232
 GameObject:
   m_ObjectHideFlags: 0

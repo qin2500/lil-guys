@@ -62,9 +62,11 @@ public class LevelManager : MonoBehaviour
         if (GlobalEvents.PlayerDeath.Invoked())
         {
             Debug.Log("Player Death Invoked");
-            restartLevel();
             GlobalEvents.PlayerDeath.uninvoke();
+            stopUpdating = true;
+            restartLevel();
             GlobalEvents.LevelComplete.uninvoke();
+            stopUpdating = false;
             return;
         }
 
@@ -125,16 +127,17 @@ public class LevelManager : MonoBehaviour
         });
     }
 
-    public void Unloadlevel(System.Action callback)
+    public void Unloadlevel(Action callback)
     {
         Debug.Log("unload level called for level: " + this._level);
         if (this._level >= 0)
         {
             Debug.Log("Unloading level: " + this._level);
-            SceneManager.UnloadSceneAsync("level " + this._level).completed += (asyncOperation) =>
+            SceneManager.UnloadSceneAsync("Level " + this._level).completed += (asyncOperation) =>
             //SceneManager.UnloadSceneAsync(SceneNames.PLAYERMOVEMENT).completed += (asyncOperation) => //TODO: comment out and uncomment above line
             {
-               callback();
+                Debug.Log("done unloading level");
+                callback();
             };
         } else
         {
