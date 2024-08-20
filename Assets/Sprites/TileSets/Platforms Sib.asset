@@ -162,4 +162,4 @@ MonoBehaviour:
     m_NeighborPositions:
     - {x: 0, y: -1, z: 0}
     m_RuleTransform: 0
-  sibingGroup: 1
+  sibingGroup: 0
