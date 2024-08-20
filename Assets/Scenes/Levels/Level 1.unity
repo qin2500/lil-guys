@@ -1907,7 +1907,7 @@ Transform:
   m_GameObject: {fileID: 887143347}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9507873, y: -0.43000007, z: -10}
+  m_LocalPosition: {x: -1.9499998, y: -0.43000007, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2257,7 +2257,7 @@ Transform:
   m_GameObject: {fileID: 986784643}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9507873, y: -0.43000007, z: -10}
+  m_LocalPosition: {x: -1.9499998, y: -0.43000007, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -120674,6 +120674,10 @@ PrefabInstance:
       propertyPath: lilGuyPrefab
       value: 
       objectReference: {fileID: 8451870551777827836, guid: 94a102346b05131458a7738b14e20ec9, type: 3}
+    - target: {fileID: 7891141988221843771, guid: ec1689588d7f0304baf05b8a23a6b84a, type: 3}
+      propertyPath: startingNumberOfGuys
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7891141988221843771, guid: ec1689588d7f0304baf05b8a23a6b84a, type: 3}
       propertyPath: homicideParticleEffect
       value: 

@@ -18,7 +18,7 @@ public static class GlobalReferences
     public static GameObject STARTINDICATOR { get { return startIndicator; } set { startIndicator = value; } }
     public static Player PLAYER { get { return player; } set { player = value; } }
 
-    public const int NUMLEVELS = 5;
+    public const int NUMLEVELS = 2;
 }
 
 public class Player
